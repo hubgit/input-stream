@@ -8,9 +8,9 @@ module.exports = function (filename, options) {
 
   const input = fs.createReadStream(filename)
 
-  input.on('finish', function () {
-    console.log(`Finished reading from ${filename}`)
-  })
+  // input.on('finish', function () {
+  //   console.log(`Finished reading from ${filename}`)
+  // })
 
   input.pipe(parser)
 
