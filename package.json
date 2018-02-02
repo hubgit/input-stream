@@ -1,7 +1,7 @@
 {
   "name": "input-stream",
   "version": "0.2.0",
-  "description": "Read data from a CSV or NDJSON file to a stream",
+  "description": "Read data from a line-delimited file (CSV, TSV or NDJSON) to a stream",
   "main": "src",
   "files": [
     "src"
