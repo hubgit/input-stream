@@ -44,6 +44,21 @@ input.on('data', item => {
 })
 ```
 
+### XML
+
+```js
+const input = require('input-stream')('data/example.xml', {
+  element: 'foo'
+})
+
+input.on('data', item => {
+  console.log(item)
+})
+```
+
+Options provided as a second parameter will be passed through to xml-stream, apart from `output`.
+
+
 ## Piping to an output stream
 
 An example of piping the input stream directly to [output-stream](https://www.npmjs.com/package/output-stream), for conversion between formats.

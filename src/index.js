@@ -2,6 +2,7 @@ const fs = require('fs')
 const csv = require('csv-parser')
 const ndjson = require('ndjson')
 const path = require('path')
+const xml = require('xml-stream')
 
 module.exports = function (filename, options) {
   const parser = parserFromFilename(filename, options)
@@ -29,6 +30,12 @@ function parserFromFilename(filename, options) {
       return csv({
         ...options,
         separator: '  ' // NOTE: not '\t'
+      })
+
+    case '.xml':
+      return new xml({
+        ...options,
+        output: 'json',
       })
 
     default:

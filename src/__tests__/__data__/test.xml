@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+    <item><foo>1</foo><bar>2</bar><baz-baz>3</baz-baz></item>
+    <item><foo>100</foo><bar>200</bar><baz-baz>300</baz-baz></item>
+    <item><foo>foo 1</foo><bar>foo 2</bar><baz-baz>foo 3</baz-baz></item>
+    <item><foo>a</foo><bar>b</bar><baz-baz>c</baz-baz></item>
+    <item><foo>d</foo><bar>e</bar><baz-baz>f</baz-baz></item>
+</items>
