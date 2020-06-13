@@ -13,11 +13,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "csv-parser": "^1.12.0",
+    "csv-parser": "^2.3.3",
     "ndjson": "^1.5.0",
-    "xml-stream": "hubgit/xml-stream"
+    "xml-stream": "^0.4.5"
   },
   "devDependencies": {
-    "jest": "^23.5.0"
+    "jest": "^26.0.1"
   }
 }
