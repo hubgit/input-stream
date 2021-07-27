@@ -10,14 +10,16 @@ or
 
 ## Formats
 
+The input stream functions as an async iterator, so each item can be awaited in a `for` loop.
+
 ### CSV
 
 ```js
 const input = require('input-stream')('data/example.csv')
 
-input.on('data', item => {
+for await (const item of input) {
   console.log(item)
-})
+}
 ```
 
 Options provided as a second parameter will be passed through to [csv-parser](https://www.npmjs.com/package/csv-parser).
@@ -27,9 +29,9 @@ Options provided as a second parameter will be passed through to [csv-parser](ht
 ```js
 const input = require('input-stream')('data/example.tsv')
 
-input.on('data', item => {
+for await (const item of input) {
   console.log(item)
-})
+}
 ```
 
 Options provided as a second parameter will be passed through to [csv-parser](https://www.npmjs.com/package/csv-parser), apart from `separator`.
@@ -39,9 +41,9 @@ Options provided as a second parameter will be passed through to [csv-parser](ht
 ```js
 const input = require('input-stream')('data/example.ndjson')
 
-input.on('data', item => {
+for await (const item of input) {
   console.log(item)
-})
+}
 ```
 
 ### XML
@@ -51,9 +53,9 @@ const input = require('input-stream')('data/example.xml', {
   element: 'foo'
 })
 
-input.on('data', item => {
+for await (const item of input) {
   console.log(item)
-})
+}
 ```
 
 Options provided as a second parameter will be passed through to xml-stream, apart from `output`.
