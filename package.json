@@ -15,7 +15,7 @@
   "dependencies": {
     "csv-parser": "^3.0.0",
     "ndjson": "^2.0.0",
-    "xml-stream": "^0.4.5"
+    "xml-stream": "willfarrell/xml-stream#969b884064cd053692d8725d69e5abef595a3690"
   },
   "devDependencies": {
     "jest": "^27.5.1"
