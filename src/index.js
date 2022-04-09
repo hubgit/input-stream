@@ -29,7 +29,7 @@ function parserFromFilename(filename, options) {
     case '.tsv':
       return csv({
         ...options,
-        separator: '  ' // NOTE: not '\t'
+        separator: '\t'
       })
 
     case '.xml':

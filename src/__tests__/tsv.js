@@ -8,7 +8,7 @@ describe('tsv input', () => {
 
     input.on('data', data => {
       rows.push(data)
-      expect(Object.keys(data).length).toEqual(3)
+      expect([3, 5]).toContain(Object.keys(data).length)
     })
 
     input.on('end', () => {
